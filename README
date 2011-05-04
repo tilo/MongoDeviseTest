@@ -20,7 +20,8 @@ edited app/views/home/index.html.erb
 
 rake routes
 
-# signed up a user, and can successfully log in and out
+# signed up a user via http://localhost:3000/users/sign_up , 
+#   and can now successfully log in and out
 
 # ------------------------------------------------------------------------
 created git branch 'override_sessionscontroller'
