@@ -20,7 +20,31 @@ edited app/views/home/index.html.erb
 
 rake routes
 
-# signed up a user, and can successfully log in and out
+# signed up a user via http://localhost:3000/users/sign_up , 
+#   and can now successfully log in and out
+
+git check-in of project
+
+# ------------------------------------------------------------------------
+created git branch 'override_sessionscontroller'
+
+modified config/routes
+added minimalistic app/controllers/users/sessions_controller.rb
+
+# create the view for users/sessions#new :
+rails g devise:views
+mkdir -p app/views/users/sessions
+cp app/views/devise/sessions/* app/views/users/sessions/
+rm -rf app/views/devise
+
+# restarted server, try to login again ==> FAIL!!
+#
+#  ==> Invalid email or password!
+
+
+
+
+
 
 
 

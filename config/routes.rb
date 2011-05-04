@@ -1,9 +1,12 @@
 MongoDeviseTest::Application.routes.draw do
   get "home/index"
 
-  devise_for :users
-
-  resources :articles
+  devise_for :users , :skip => :sessions
+  as :user do
+    get  '/users/sign_in' , :to => 'users/sessions#new'    , :as => 'new_user_session'
+    post '/users/sign_in' , :to => 'users/sessions#create' , :as => 'user_session'
+    get  '/users/sign_out', :to => 'users/sessions#destroy', :as => 'destroy_user_session'
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
