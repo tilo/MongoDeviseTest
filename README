@@ -22,5 +22,8 @@ rake routes
 
 # signed up a user, and can successfully log in and out
 
-
+# ------------------------------------------------------------------------
+created git branch 'override_sessionscontroller'
+to try to override Devise::SessionsController with Users::SessionsController
+but this failed .. see branch  'override_sessionscontroller'
 
