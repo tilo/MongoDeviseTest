@@ -1,0 +1,26 @@
+
+rails new MongoDeviseTest
+
+edited Gemfile
+
+rails g mongoid:config
+
+edited config/mongoid.yml
+
+edited config/application.rb (to remove rails/all requirement)
+
+rails g devise:install
+
+rails g devise User
+
+rails g controller home index
+
+edited config/routes
+edited app/views/home/index.html.erb
+
+rake routes
+
+# signed up a user, and can successfully log in and out
+
+
+
