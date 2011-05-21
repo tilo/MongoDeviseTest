@@ -25,6 +25,8 @@ rake routes
 
 # ------------------------------------------------------------------------
 created git branch 'override_sessionscontroller'
-to try to override Devise::SessionsController with Users::SessionsController
-but this failed .. see branch  'override_sessionscontroller'
+
+check this branch to see how to override Devise::SessionsController with Users::SessionsController
+
+e.g. see branch  'override_sessionscontroller'
 
