@@ -41,9 +41,12 @@ rm -rf app/views/devise
 #
 #  ==> Invalid email or password!
 
+# ------------------------------------------------------------------------
+# Fixed problem in config/routes.rb
 
+# now Devise successfully uses the app/controllers/users/sessions_controller.rb
 
-
+thanks to Carlos da Silva for the tip!
 
 
 
